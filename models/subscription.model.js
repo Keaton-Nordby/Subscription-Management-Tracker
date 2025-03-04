@@ -43,6 +43,8 @@ const subscriptionSchema = new mongoose.Schema({
       }
     
       // Auto-update the status if renewal date has passed
+      
+      
       if (this.renewalDate < new Date()) {
         this.status = 'expired';
       }
